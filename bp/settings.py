@@ -15,12 +15,6 @@ NEWSPIDER_MODULE = 'bp.spiders'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
-SPLASH_URL = 'http://127.0.0.1:8050/'
-
-DUPEFILTER_CLASS = 'scrapyjs.SplashAwareDupeFilter'
-
-HTTPCACHE_STORAGE = 'scrapyjs.SplashAwareFSCacheStorage'
-
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -46,15 +40,13 @@ HTTPCACHE_STORAGE = 'scrapyjs.SplashAwareFSCacheStorage'
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-SPIDER_MIDDLEWARES = {
-    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
-}
+# SPIDER_MIDDLEWARES = {
+#     'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
+# }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    'scrapy_splash.SplashCookiesMiddleware': 723,
-    'scrapy_splash.SplashMiddleware': 725,
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
 }
 
