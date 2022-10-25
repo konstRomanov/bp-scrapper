@@ -1,44 +1,44 @@
 appdirs==1.4.4
-attrs @ file:///opt/conda/conda-bld/attrs_1642510447205/work
-Automat @ file:///tmp/build/80754af9/automat_1600298431173/work
-bcrypt @ file:///C:/Windows/Temp/abs_36kl66t_aw/croots/recipe/bcrypt_1659554334050/work
+attrs
+Automat
+bcrypt
 brotlipy==0.7.0
-certifi @ file:///C:/b/abs_ac29jvt43w/croot/certifi_1665076682579/work/certifi
-cffi @ file:///C:/Windows/Temp/abs_6808y9x40v/croots/recipe/cffi_1659598653989/work
-charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+certifi
+cffi
+charset-normalizer
 constantly==15.1.0
-cryptography @ file:///C:/b/abs_36x9ifdcl4/croot/cryptography_1665612655344/work
+cryptography
 cssselect==1.1.0
-filelock @ file:///opt/conda/conda-bld/filelock_1647002191454/work
-hyperlink @ file:///tmp/build/80754af9/hyperlink_1610130746837/work
-idna @ file:///C:/b/abs_bdhbebrioa/croot/idna_1666125572046/work
-incremental @ file:///tmp/build/80754af9/incremental_1636629750599/work
-itemadapter @ file:///tmp/build/80754af9/itemadapter_1626442940632/work
-itemloaders @ file:///opt/conda/conda-bld/itemloaders_1646805235997/work
-jmespath @ file:///Users/ktietz/demo/mc3/conda-bld/jmespath_1630583964805/work
-lxml @ file:///C:/ci/lxml_1657527492694/work
-parsel @ file:///C:/ci/parsel_1646722035970/work
-Protego @ file:///tmp/build/80754af9/protego_1598657180827/work
-pyasn1 @ file:///Users/ktietz/demo/mc3/conda-bld/pyasn1_1629708007385/work
+filelock
+hyperlink
+idna
+incremental
+itemadapter
+itemloaders
+jmespath
+lxml
+parsel
+Protego
+pyasn1
 pyasn1-modules==0.2.8
-pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pycparser
 PyDispatcher==2.0.5
-PyHamcrest @ file:///tmp/build/80754af9/pyhamcrest_1615748656804/work
-pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
-PySocks @ file:///C:/ci_310/pysocks_1642089375450/work
+PyHamcrest
+pyOpenSSL
+PySocks
 pywin32==302
 queuelib==1.5.0
-requests @ file:///C:/ci/requests_1657735340829/work
-requests-file @ file:///Users/ktietz/demo/mc3/conda-bld/requests-file_1629455781986/work
-Scrapy @ file:///C:/Windows/TEMP/abs_f50e21j997/croots/recipe/scrapy_1659598707153/work
-service-identity @ file:///Users/ktietz/demo/mc3/conda-bld/service_identity_1629460757137/work
-six @ file:///tmp/build/80754af9/six_1644875935023/work
-tldextract @ file:///opt/conda/conda-bld/tldextract_1646638314385/work
-Twisted @ file:///C:/Windows/Temp/abs_ccblv2rzfa/croots/recipe/twisted_1659592764512/work
-twisted-iocpsupport @ file:///C:/ci/twisted-iocpsupport_1646817083730/work
-typing_extensions @ file:///C:/Windows/TEMP/abs_dd2d0moa85/croots/recipe/typing_extensions_1659638831135/work
-urllib3 @ file:///C:/b/abs_a8_3vfznn_/croot/urllib3_1666298943664/work
-w3lib @ file:///Users/ktietz/demo/mc3/conda-bld/w3lib_1629359764703/work
-win-inet-pton @ file:///C:/ci_310/win_inet_pton_1642658466512/work
+requests
+requests-file
+Scrapy
+service-identity
+six
+tldextract
+Twisted
+twisted-iocpsupport
+typing_extensions
+urllib3
+w3lib
+win-inet-pton
 wincertstore==0.2
-zope.interface @ file:///C:/ci_310/zope.interface_1642113633904/work
+zope.interface
