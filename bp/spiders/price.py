@@ -29,7 +29,6 @@ class TickerPriceSpider(scrapy.Spider):
 
     def parse(self, response, **kwargs):
         ticker_news_script = response.xpath('//script[contains(text(),"root.App.main")]').get()
-        print(response.text)
         ticker_news_json = re.search('{.*};', ticker_news_script).group(0)[:-1]
         ticker_news_parser = json.loads(ticker_news_json)
         stores = ticker_news_parser['context']['dispatcher']['stores']
