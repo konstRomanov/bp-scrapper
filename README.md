@@ -1,2 +1,3 @@
-# bp-scrapper
-Scrapy project containing spiders for web data mining
+# Scrapy BP
+
+A collection of spiders required for BP
