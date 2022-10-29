@@ -32,11 +32,11 @@ class NewsSpider(scrapy.Spider):
 
         for x in articles:
             news = News(url=x.get('url'),
-                        ticker='ALL',
                         title=x.get('title'),
                         summary=x.get('summary'),
                         date=x.get('pubtime'),
-                        category=x.get('categoryLabel'))
+                        category=x.get('categoryLabel'),
+                        tickers=[tick.get('symbol') for tick in x.get('stockTickers')])
 
             if news.title not in self.state['news']:
                 self.state['news'].add(news.title)

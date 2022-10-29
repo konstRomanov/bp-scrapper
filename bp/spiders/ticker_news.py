@@ -43,7 +43,7 @@ class TickerNewsSpider(scrapy.Spider):
 
         for x in articles:
             news = News(url=x.get('url'),
-                        ticker=symbol,
+                        tickers=[symbol],
                         title=x.get('title'),
                         summary=x.get('summary'),
                         date=x.get('pubtime'))

@@ -4,11 +4,11 @@ from dataclasses import dataclass
 @dataclass
 class News:
     url: str = None
-    ticker: str = None
     title: str = None
     summary: str = None
     date: int = None
     category: str = None
+    tickers: list = None
 
 
 @dataclass
