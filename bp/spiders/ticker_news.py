@@ -23,7 +23,7 @@ class TickerNewsSpider(scrapy.Spider):
             if ticker not in self.state['news'].keys():
                 self.state['news'][ticker] = set()
 
-            yield scrapy.Request(f'https://finance.yahoo.com/quote/{ticker}/news?p={ticker}',
+            yield scrapy.Request(f'https://finance.yahoo.com/quote/{ticker}?p={ticker}',
                                  self.parse,
                                  dont_filter=True)
 
