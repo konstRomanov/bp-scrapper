@@ -6,6 +6,14 @@ import scrapy
 from ..items import News
 
 
+def get_main_list(streams):
+    main_list = 'LISTID'
+
+    for key, val in streams:
+        if key.startswith(main_list):
+            return val
+
+
 def parse_tickers(finance):
     if finance is None or finance.get('stockTickers') is None:
         return []
@@ -27,14 +35,11 @@ class NewsSpider(scrapy.Spider):
         yield scrapy.Request('https://finance.yahoo.com/news/', self.parse, dont_filter=True)
 
     def parse(self, response, **kwargs):
-        main_list = 0
-        side_list = 1
-
         news_script = response.xpath('//script[contains(text(),"root.App.main")]').get()
         news_json = re.search('{.*};', news_script).group(0)[:-1]
         news_parser = json.loads(news_json)
         streams = news_parser['context']['dispatcher']['stores']['StreamStore']['streams']
-        news = list(streams.values())[main_list]['data']['stream_items']
+        news = get_main_list(streams)['data']['stream_items']
         articles = [x for x in news if x.get('type') == 'article']
 
         for x in articles:
