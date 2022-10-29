@@ -9,7 +9,7 @@ from ..items import News
 def get_main_list(streams):
     main_list = 'LISTID'
 
-    for key, val in streams:
+    for key, val in streams.items():
         if key.startswith(main_list):
             return val
 
