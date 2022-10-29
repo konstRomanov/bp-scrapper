@@ -6,11 +6,11 @@ import scrapy
 from ..items import News
 
 
-def parse_tickers(param):
-    if param.get('finance') or param.get('finance').get('stockTickers') is None:
+def parse_tickers(finance):
+    if finance is None or finance.get('stockTickers') is None:
         return []
 
-    return [tick.get('symbol') for tick in param.get('finance').get('stockTickers')]
+    return [tick.get('symbol') for tick in finance.get('stockTickers')]
 
 
 class NewsSpider(scrapy.Spider):
@@ -43,7 +43,7 @@ class NewsSpider(scrapy.Spider):
                         summary=x.get('summary'),
                         date=x.get('pubtime'),
                         category=x.get('categoryLabel'),
-                        tickers=parse_tickers(x))
+                        tickers=parse_tickers(x.get('finance')))
 
             if news.title not in self.state['news']:
                 self.state['news'].add(news.title)
