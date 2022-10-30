@@ -14,7 +14,7 @@ class TickerPriceSpider(scrapy.Spider):
         self.state = {'prices': {}}
 
     def start_requests(self):
-        tickers = ['META', 'AMZN', 'AAPL', 'NFLX', 'GOOGL']
+        tickers = ['META', 'AMZN', 'AAPL', 'NFLX', 'GOOGL', '^GSPC']
 
         if 'prices' not in self.state.keys():
             self.state['prices'] = dict()
